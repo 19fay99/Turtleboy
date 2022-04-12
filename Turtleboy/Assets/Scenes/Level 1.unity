@@ -638,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2861281883473675609, guid: 6d1dada5c44801d4c9bd18c5fc6b4845, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.602304
+      value: 7.29
       objectReference: {fileID: 0}
     - target: {fileID: 2861281883473675609, guid: 6d1dada5c44801d4c9bd18c5fc6b4845, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1087,7 +1087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8770043491885196828, guid: 610ce238425a2714bbb8df4bff1e9248, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.597
+      value: 7.33
       objectReference: {fileID: 0}
     - target: {fileID: 8770043491885196828, guid: 610ce238425a2714bbb8df4bff1e9248, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1488,7 +1488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Time
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2037,7 +2037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 593264681956392621, guid: ac6637cadc345c04eb07cdccc5da659a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.03
+      value: -3.08
       objectReference: {fileID: 0}
     - target: {fileID: 593264681956392621, guid: ac6637cadc345c04eb07cdccc5da659a, type: 3}
       propertyPath: m_LocalPosition.z
