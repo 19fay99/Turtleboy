@@ -11,11 +11,13 @@ public class TimeLeft : MonoBehaviour
     private float Timer = 0f;
     private float TotalTime = 30f;
     public bool isGameActive = true;
+    private PlayerMovement playerMovement;
 
     public TextMeshProUGUI countdownText;
     // Start is called before the first frame update
     void Start()
     {
+        playerMovement = GameObject.Find("Turtleboy").GetComponent<PlayerMovement>();
         Timer = TotalTime;
     }
 
@@ -26,6 +28,12 @@ public class TimeLeft : MonoBehaviour
         countdownText.text = "Time: " + Timer.ToString("0");
 
         if(Timer <= 0)
+        {
+            Timer = 0;
+            gameOver.SetActive(true);
+            isGameActive = false;
+        }
+        if(playerMovement.dead == 1)
         {
             Timer = 0;
             gameOver.SetActive(true);
