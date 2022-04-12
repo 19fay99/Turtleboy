@@ -33,16 +33,18 @@ public class TimeLeft : MonoBehaviour
             gameOver.SetActive(true);
             isGameActive = false;
         }
+        else
+        {
+            isGameActive = true;
+        }
+
         if(playerMovement.dead == 1)
         {
             Timer = 0;
             gameOver.SetActive(true);
             isGameActive = false;
         }
-        else
-        {
-            isGameActive = true;
-        }
+      
     }
 
     public void RestartButton()
