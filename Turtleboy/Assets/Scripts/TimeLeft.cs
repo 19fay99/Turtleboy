@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimeLeft : MonoBehaviour
 {
-    float Timer = 0f;
-    float TotalTime = 30f;
-
+    public GameObject gameOver;
+    private float Timer = 0f;
+    private float TotalTime = 30f;
+    public bool isGameActive = true;
 
     public TextMeshProUGUI countdownText;
     // Start is called before the first frame update
@@ -26,6 +28,22 @@ public class TimeLeft : MonoBehaviour
         if(Timer <= 0)
         {
             Timer = 0;
+            gameOver.SetActive(true);
+            isGameActive = false;
         }
+        else
+        {
+            isGameActive = true;
+        }
+    }
+
+    public void RestartButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ExitButton()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }
