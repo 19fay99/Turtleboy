@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5174142812249708181}
   - component: {fileID: 5174142812249708180}
   - component: {fileID: 5174142812249708178}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass Block
   m_TagString: Ground
   m_Icon: {fileID: 0}
