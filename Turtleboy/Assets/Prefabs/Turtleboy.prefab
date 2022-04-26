@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 593264681956392622}
   - component: {fileID: 593264681956392623}
   - component: {fileID: 593264681956392620}
+  - component: {fileID: 4914375360480753566}
   m_Layer: 0
   m_Name: Turtleboy
   m_TagString: Untagged
@@ -216,6 +217,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpVelocity: 0
+  jumpVelocity: 5
   onGround: 0
   dead: 0
+--- !u!114 &4914375360480753566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593264681956392619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf19ae5c476391d4faeaa0920eeb0714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMulti: 2.5
+  lowJumpMulti: 2
