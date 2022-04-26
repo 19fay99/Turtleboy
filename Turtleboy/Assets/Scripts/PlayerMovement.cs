@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private SpriteRenderer render;
     public float speed = 5.0f;
     public float jumpVelocity;
     public bool onGround = false;
@@ -13,6 +14,11 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         timeLeft = GameObject.Find("Time").GetComponent<TimeLeft>();
+        render = GetComponent<SpriteRenderer>();
+        if(render == null)
+        {
+            Debug.Log("Player Sprite is missing a renderer");
+        }
     }
 
     // Update is called once per frame
@@ -22,6 +28,14 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
             transform.position += horizontal * Time.deltaTime * speed;
+
+            if(Input.GetAxisRaw("Horizontal") > 0) {
+                render.flipX = false;
+            }
+
+            if(Input.GetAxisRaw("Horizontal") < 0) {
+                render.flipX = true;
+            }
 
             Jump();
             DeathCheck();
